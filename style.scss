@@ -1,0 +1,224 @@
+//color config
+$soft-orange: hsl(35, 77%, 62%);
+$soft-red: hsl(5, 85%, 63%);
+$off-white: hsl(36, 100%, 99%);
+$gray-blue: hsl(233, 8%, 79%);
+$dark-gray-blue: hsl(236, 13%, 42%);
+$dark-blue: hsl(240, 100%, 5%);
+
+*{//reset
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+//  outline: 1px solid red;
+ transition: all 0.7s ease;
+
+}
+//scrollbar
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-track{
+    background-color: hsla(35, 77%, 62%, 0.449);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: $gray-blue;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: $soft-red;
+    border-radius: 4px;
+}
+
+//begin
+
+
+
+main{
+    background-color: $off-white;
+    padding: 5rem 8rem;
+    font-family: 'Inter', sans-serif;
+    // background-color: RED;
+    
+}
+
+nav {//styling the nav bar
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+ul {
+    li{
+        display: inline-block;
+        margin-left: 35px;
+        list-style: none;
+        color: blue;
+        
+        &:hover a{
+            color: $soft-red;
+        }
+        a{
+            text-decoration: none;
+            color: $dark-blue;
+            font-size: 1rem;
+            
+           
+        }
+    }
+}//End of styling the Nav bar
+
+[alt="image"]{
+    width: 100%;
+    
+}
+
+
+.top {//This is the left side handling the image and text under.
+    width: 100%;
+    display: flex;
+   
+    height: 500px;
+    column-gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.left {
+    width: 68%;
+}
+
+.right{
+    width: 32%;
+    background-color: $dark-blue;
+    padding: 1.5rem;
+
+    h1{
+        color: $soft-orange;
+        font-size: 2.5rem;
+        margin-bottom: 1.2rem;
+    }
+    h2{
+        margin-bottom:0.7rem;
+        a{
+        color: $off-white;
+        font-size: 1.19rem;
+            text-decoration: none;
+
+            &:hover{
+                color: $soft-orange;
+            }
+        }
+    } 
+
+    p{
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.285);
+        margin-bottom: 1.8rem;
+        color: $gray-blue;
+        font-size: 15px;
+        line-height: 1.5rem;
+
+        &:last-of-type{
+            border: none;
+        }
+    }
+
+}
+
+.big-img-wrap{
+    width: 100%;
+    img{
+        width: 100%;
+    }
+}
+.txt-wrap{//these handles the text under the image in the left side
+    display: flex;
+    padding-top: 1.8rem;
+    .txt{
+        width: 50%;
+        p{
+            color: $dark-blue;
+            line-height: 1.5rem;
+            margin-right: 2rem;
+        }
+
+        a {
+            width: 190px;
+            height: 45px;
+            background-color: $soft-red;
+            display: block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            // font-weight: 700;
+            color: $off-white;
+            letter-spacing: 5px;
+            margin-top: 28px;
+
+            &:hover{
+                background-color: $dark-blue;
+
+            }
+        }
+    }
+}
+
+.web3{
+    font-size: 3rem;
+    margin-right: 4rem;
+    font-weight: 800;
+    line-height: 3.2rem;
+}
+
+
+.down {//This contains the three news item at the bottom of the page
+    display: flex;
+    column-gap: 2rem;
+    padding-top: 2.5rem;
+
+    .box {
+        display: flex;
+        column-gap: 1rem;
+        width:33.33%;
+        img{
+            width: 100px;
+        }
+
+        .txt{
+            h3{
+                font-size: 2rem;
+                color: $gray-blue;
+                letter-spacing: 2px;
+                margin-bottom: 9px;
+            }
+
+            h4 {
+                font-size: 1.2rem;
+                font-weight: 700;
+                margin-bottom: 9px; 
+
+                a{
+                    text-decoration: none;
+                    color: initial;
+                    font-weight: 700;
+
+                    &:hover {
+                        color: $soft-red;
+                    }
+                }
+            }
+            p{
+                line-height: 1.5rem;
+                font-size: 15px;
+                color: $dark-gray-blue;
+            }
+        }
+    }
+}
+
+
