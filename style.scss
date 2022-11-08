@@ -12,7 +12,7 @@ $dark-blue: hsl(240, 100%, 5%);
   padding: 0;
   box-sizing: border-box;
   //  outline: 1px solid red;
-  transition: all 0.7s ease;
+  transition: all 0.5s ease;
 }
 //scrollbar
 ::-webkit-scrollbar {
@@ -37,12 +37,12 @@ $dark-blue: hsl(240, 100%, 5%);
 
 main {
   background-color: $off-white;
-  padding: 5rem 3rem;
+  padding: 5rem 4rem;
   font-family: "Inter", sans-serif;
 
   // width: 1200px;
-  // max-width: 1440px;
-  // margin: auto;
+  max-width: 1440px;
+  margin: auto;
 }
 
 nav {
@@ -226,7 +226,7 @@ ul {
 .close {
   display: none;
   width: 25px;
-  transition: all 0.7s ease;
+  transition: all 0.4s ease;
   position: relative;
   
 
@@ -254,9 +254,12 @@ ul {
     margin-bottom: 1.8rem;
   }
 
-  .logo-img,
-  .menu-btn {
+  .logo-img{
     width: 40px;
+  }
+ 
+  .menu-btn{
+    width: 30px;
   }
 
   .big-img-wrap {
@@ -268,9 +271,11 @@ ul {
   background-color: $off-white;
   top: 0;
   bottom: 0;
-  right: -190px;
+  right: -800px;
   padding-top: 100px;
-  opacity: 0;
+  z-index:1;
+  width: 75vw;
+    transition: all 0.4s ease;
 
   li{
     display: block;
@@ -282,14 +287,15 @@ ul {
   }
 
   .show-mobile-menu{
-    opacity: 1;
     right:0;
-    left: 25vw;
+    transition: all 0.4s ease;
   }
   
   .menu-btn {
     display: block;
     position: relative;
+    z-index: 9;
+    transition: all 0.4s ease;
   }
 
   .top {
@@ -364,16 +370,28 @@ ul {
 
   .menu-close {
     display: none;
+    z-index: 9;
   }
 
   .menu-open{
     display: block;
+    z-index: 9;
   }
 
   .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
+  position: absolute;
+   background-color: hsla(240, 100%, 5%, 0.681);
+   top: 0;
+   bottom: 0;
+   right: 100vw;
+   left: 0;
+   z-index: 0;
+   display: none;
+   transition: 0.4s ease;
+  }
+
+  .over-show {
+    display: block;
+    right: 0;
   }
 }
