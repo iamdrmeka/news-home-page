@@ -11,20 +11,24 @@
     <title>NEWS || NNAEMEKA</title>
   </head>
   <body>
+  <!-- <div class="mobile-error">  <h1>ooops....... <br> mobile page still under development....</h1>
+    <p>Kindly view with your desktop or laptops</p></div> -->
     <main>
         <!-- this is the navigation and logo -->
       <nav>
         <div class="logo">
-          <img src="/images/logo.svg" alt="Site-logo" />
+          <img src="/images/logo.svg" alt="Site-logo" class="logo-img"/>
         </div>
-        <div>
-          <ul>
+        <div class="nav-items">
+          <ul class="desktop">
             <li class="pages"><a href="#!">Home</a></li>
             <li class="pages"><a href="#!">New</a></li>
             <li class="pages"><a href="#!">Popular</a></li>
             <li class="pages"><a href="#!">Trending</a></li>
             <li class="pages"><a href="#!">Categories</a></li>
           </ul>
+          <img src="/images/icon-menu.svg" alt="menu" class="menu-btn" id="menu">
+          <img src="/images/icon-menu-close.svg" alt="close-menu" class="close" id="close">
         </div>
       </nav>
       <!-- End for the naav and logo -->
@@ -36,7 +40,7 @@
           <div class="big-img-wrap">
             <picture>
               <source
-                media="(max-width:800px)"
+                media="(max-width:820px)"
                 srcset="/images/image-web-3-mobile.jpg"
               />
               <img src="/images/image-web-3-desktop.jpg" alt="image" />
