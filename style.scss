@@ -225,8 +225,14 @@ ul {
 
 .close {
   display: none;
+  width: 25px;
+  transition: all 0.7s ease;
+  position: relative;
+  
+
+
 }
-.menu {
+.menu-btn {
   display: none;
 }
 
@@ -235,8 +241,13 @@ ul {
   //     // outline: 1px solid;
   // }
 
+  
+
   main {
     padding: 16px;
+    position: relative;
+    overflow-x: hidden;
+
   }
 
   nav {
@@ -252,12 +263,33 @@ ul {
     margin-bottom: 2rem;
   }
 
-  .desktop {
-    display: none;
+  .mobile-menu-hidden {
+  position: absolute;
+  background-color: $off-white;
+  top: 0;
+  bottom: 0;
+  right: -190px;
+  padding-top: 100px;
+  opacity: 0;
+
+  li{
+    display: block;
+    margin: 30px;
+    a{
+        font-size: 18px;
+    }
+  }
+  }
+
+  .show-mobile-menu{
+    opacity: 1;
+    right:0;
+    left: 25vw;
   }
   
-  .menu {
-    display: initial;
+  .menu-btn {
+    display: block;
+    position: relative;
   }
 
   .top {
@@ -336,5 +368,12 @@ ul {
 
   .menu-open{
     display: block;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
   }
 }

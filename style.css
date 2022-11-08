@@ -191,15 +191,20 @@ ul li a {
 
 .close {
   display: none;
+  width: 25px;
+  transition: all 0.7s ease;
+  position: relative;
 }
 
-.menu {
+.menu-btn {
   display: none;
 }
 
 @media screen and (max-width: 820px) {
   main {
     padding: 16px;
+    position: relative;
+    overflow-x: hidden;
   }
   nav {
     margin-bottom: 1.8rem;
@@ -211,11 +216,30 @@ ul li a {
   .big-img-wrap {
     margin-bottom: 2rem;
   }
-  .desktop {
-    display: none;
+  .mobile-menu-hidden {
+    position: absolute;
+    background-color: hsl(36deg, 100%, 99%);
+    top: 0;
+    bottom: 0;
+    right: -190px;
+    padding-top: 100px;
+    opacity: 0;
   }
-  .menu {
-    display: initial;
+  .mobile-menu-hidden li {
+    display: block;
+    margin: 30px;
+  }
+  .mobile-menu-hidden li a {
+    font-size: 18px;
+  }
+  .show-mobile-menu {
+    opacity: 1;
+    right: 0;
+    left: 25vw;
+  }
+  .menu-btn {
+    display: block;
+    position: relative;
   }
   .top {
     display: initial;
@@ -276,5 +300,11 @@ ul li a {
   }
   .menu-open {
     display: block;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
   }
 }/*# sourceMappingURL=style.css.map */
