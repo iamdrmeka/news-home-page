@@ -311,6 +311,7 @@ ul li a {
     background-color: hsla(240deg, 100%, 5%, 0.681);
     z-index: 0;
     top: 0;
+    position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
