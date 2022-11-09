@@ -252,6 +252,7 @@ ul {
 
   nav {
     margin-bottom: 1.8rem;
+   
   }
 
   .logo-img{
@@ -376,6 +377,9 @@ ul {
   .menu-open{
     display: block;
     z-index: 9;
+    position: fixed;
+    top: 15px;
+    right: 20px;
   }
 
   .overlay {
@@ -394,5 +398,6 @@ display: none;
 
   .over-show {
 display: block;
+
   }
 }

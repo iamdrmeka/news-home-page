@@ -305,6 +305,9 @@ ul li a {
   .menu-open {
     display: block;
     z-index: 9;
+    position: fixed;
+    top: 15px;
+    right: 20px;
   }
   .overlay {
     position: absolute;
