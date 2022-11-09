@@ -32,4 +32,6 @@ overLay.addEventListener('click', function(){
 
 });
 
-//this code would have been written better and shorter if I have learn looping, but for now, This is howi can do it till I get better with Javascript.
+// this code would have been written better and shorter if I have learn looping, but for now, This is howi can do it till I get better with Javascript.
+
+

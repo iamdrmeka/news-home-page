@@ -241,11 +241,11 @@ ul {
   //     // outline: 1px solid;
   // }
 
-  
+ 
 
   main {
     padding: 16px;
-    position: relative;
+   
     overflow-x: hidden;
 
   }
@@ -267,15 +267,15 @@ ul {
   }
 
   .mobile-menu-hidden {
-  position: absolute;
-  background-color: $off-white;
-  top: 0;
-  bottom: 0;
-  right: -800px;
-  padding-top: 100px;
-  z-index:1;
-  width: 75vw;
-    transition: all 0.4s ease;
+    background-color: $off-white;
+    padding-top: 7rem;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    transform: translateX(100vw);
+
+  
 
   li{
     display: block;
@@ -287,8 +287,8 @@ ul {
   }
 
   .show-mobile-menu{
-    right:0;
-    transition: all 0.4s ease;
+    transform: translateX(-55vw);
+  
   }
   
   .menu-btn {
@@ -381,17 +381,17 @@ ul {
   .overlay {
   position: absolute;
    background-color: hsla(240, 100%, 5%, 0.681);
+   z-index: 0;
    top: 0;
    bottom: 0;
-   right: 100vw;
    left: 0;
-   z-index: 0;
-   display: none;
-   transition: 0.4s ease;
+   right: 0;
+display: none;
+ transition: 0.5s ease;
+ 
   }
 
   .over-show {
-    display: block;
-    right: 0;
+display: block;
   }
 }

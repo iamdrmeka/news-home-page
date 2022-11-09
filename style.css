@@ -205,7 +205,6 @@ ul li a {
 @media screen and (max-width: 820px) {
   main {
     padding: 16px;
-    position: relative;
     overflow-x: hidden;
   }
   nav {
@@ -221,15 +220,13 @@ ul li a {
     margin-bottom: 2rem;
   }
   .mobile-menu-hidden {
-    position: absolute;
     background-color: hsl(36deg, 100%, 99%);
+    padding-top: 7rem;
+    position: fixed;
     top: 0;
     bottom: 0;
-    right: -800px;
-    padding-top: 100px;
-    z-index: 1;
-    width: 75vw;
-    transition: all 0.4s ease;
+    width: 100vw;
+    transform: translateX(100vw);
   }
   .mobile-menu-hidden li {
     display: block;
@@ -239,8 +236,7 @@ ul li a {
     font-size: 18px;
   }
   .show-mobile-menu {
-    right: 0;
-    transition: all 0.4s ease;
+    transform: translateX(-55vw);
   }
   .menu-btn {
     display: block;
@@ -313,16 +309,15 @@ ul li a {
   .overlay {
     position: absolute;
     background-color: hsla(240deg, 100%, 5%, 0.681);
+    z-index: 0;
     top: 0;
     bottom: 0;
-    right: 100vw;
     left: 0;
-    z-index: 0;
+    right: 0;
     display: none;
-    transition: 0.4s ease;
+    transition: 0.5s ease;
   }
   .over-show {
     display: block;
-    right: 0;
   }
 }/*# sourceMappingURL=style.css.map */
